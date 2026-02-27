@@ -17,5 +17,4 @@ public class Solution {
         System.out.println(sol.reverse(100));
         System.out.println(sol.reverse(0));
     }
-
 }
