@@ -1,8 +1,8 @@
 #!/bin/bash
 cd "$(dirname "$0")"
-javac ./src/Solution.java -d ./bin
+javac ./src/HelloWorld.java -d ./bin
 #clear
-java -cp ./bin Solution
+java -cp ./bin HelloWorld
 
 #optional
 rm -rf ./bin
