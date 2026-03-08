@@ -1,9 +1,9 @@
 public class Solution {
     public int reverse(int n) {
-        if (n > Integer.MAX_VALUE) return 0;
         int reversed=0;
         while (n!=0) {
             int digit=n%10;
+            if (reversed > Integer.MAX_VALUE/10 || (digit > Integer.MAX_VALUE % 10 && reversed == Integer.MAX_VALUE/10)) return 0;
             reversed=reversed*10+digit;
             n/=10;
         }
