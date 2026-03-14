@@ -20,7 +20,7 @@ public class Account {
         return Arrays.copyOf(history, count);
     }
     public void addTransaction(Transaction transaction) {
-        this.balance += transaction.getAmonut();
+        this.balance += transaction.getAmount();
         if (count < history.length) {
             history[count++] = transaction;
         }

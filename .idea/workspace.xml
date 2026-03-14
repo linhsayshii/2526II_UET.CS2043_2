@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ed20a33-199b-4b3c-8316-d6980459bc5f" name="Changes" comment="">
+    <list default="true" id="9ed20a33-199b-4b3c-8316-d6980459bc5f" name="Changes" comment="initial commit for week2 homework">
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/Week 1/1.1 HelloName/HelloWorld.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/Week 1/1.10 second largest number/Solution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/Week 1/1.4 fibonacci/Solution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/Week 1/1.5 GCD/Solution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/Week 1/1.6 isPrime/Solution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/Week 1/1.7 reverse numbers/Solution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/Week 1/1.8 check palindrome/Solution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/Week 1/1.9 sum digits/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/HoangVietLinh_25020234_Week2/Bai06/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/HoangVietLinh_25020234_Week2/Bai06/src/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Homework/HoangVietLinh_25020234_Week2/Bai06/src/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/HoangVietLinh_25020234_Week2/Bai06/src/Transaction.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/linhsayshii/CLionProjects/uet/2526II_UET.CS2043_2" value="3AFt0gf8Nf3VYpKmMubWuY9fbBx" />
+    </persistenceIdMap>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,24 +63,30 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SHELLCHECK.PATH": "/Users/linhsayshii/Library/Application Support/JetBrains/IntelliJIdea2025.3/plugins/Shell Script/shellcheck",
+    "Shell Script.run.sh (1).executor": "Run",
     "Shell Script.run.sh.executor": "Run",
+    "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/linhsayshii/CLionProjects/uet/2526II_UET.CS2043_2/Homework/Week 1/1.10 second largest number",
+    "last_opened_file_path": "/Users/linhsayshii/CLionProjects/uet/2526II_UET.CS2043_2/Homework/HoangVietLinh_25020234_Week3/Bai05",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Homework/Week 1/1.10 second largest number" />
-      <recent name="$PROJECT_DIR$/Homework/Week 1/1.9 sum digits" />
-      <recent name="$PROJECT_DIR$/Homework/Week 1/1.8 check palindrome" />
-      <recent name="$PROJECT_DIR$/Homework/Week 1/1.7 reverse numbers" />
-      <recent name="$PROJECT_DIR$/Homework/Week 1/1.6 isPrime" />
+      <recent name="$PROJECT_DIR$/Homework/HoangVietLinh_25020234_Week3/Bai05" />
+      <recent name="$PROJECT_DIR$/Homework/HoangVietLinh_25020234_Week3" />
+      <recent name="$PROJECT_DIR$/Homework/HoangVietLinh_25020234_Week3/Bai02" />
+      <recent name="$PROJECT_DIR$/Homework/HoangVietLinh_25020234_Week3/Bai01" />
+      <recent name="$PROJECT_DIR$/Homework/HoangVietLinh_25020234_Week2/Bai10" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Homework" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -99,10 +108,69 @@
       <workItem from="1772200282102" duration="731000" />
       <workItem from="1772209469438" duration="341000" />
       <workItem from="1772448073565" duration="1963000" />
+      <workItem from="1772692809995" duration="4668000" />
+      <workItem from="1772697511172" duration="1650000" />
+      <workItem from="1772910097966" duration="2613000" />
+      <workItem from="1772940806202" duration="955000" />
+      <workItem from="1773296612903" duration="52000" />
+      <workItem from="1773296686566" duration="8022000" />
     </task>
+    <task id="LOCAL-00001" summary="new unexpected case for week1 homework">
+      <option name="closed" value="true" />
+      <created>1772940493612</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1772940493613</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit for week2 homework">
+      <option name="closed" value="true" />
+      <created>1772940522280</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1772940522280</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initial commit for week2 homework">
+      <option name="closed" value="true" />
+      <created>1772940626081</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1772940626081</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new unexpected case for week1 homework" />
+    <MESSAGE value="initial commit for week2 homework" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit for week2 homework" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
 </project>

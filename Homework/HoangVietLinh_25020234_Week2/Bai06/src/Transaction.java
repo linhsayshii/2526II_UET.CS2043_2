@@ -7,7 +7,7 @@ public class Transaction {
         this.amount = amount;
         this.timestamp = timestamp;
     }
-    public double getAmonut() {
+    public double getAmount() {
         return amount;
     }
     @Override
