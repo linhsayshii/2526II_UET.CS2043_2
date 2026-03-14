@@ -26,6 +26,7 @@ public class Main {
             }
             totalPrice += products.get(products.size() - 1).getFinalPrice();
         }
+        System.out.println("----------------------------------------------");
         for (Product p : products) {
             System.out.println(p.getName() + " - " + p.getType() + " - " + p.getFinalPrice());
         }

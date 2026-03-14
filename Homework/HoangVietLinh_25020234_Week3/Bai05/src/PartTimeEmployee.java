@@ -6,9 +6,11 @@ class PartTimeEmployee extends Employee {
         this.workingHours = workingHours;
         this.hourlyRate = hourlyRate;
     }
+    @Override
     public String getType() {
         return "Part-time";
     }
+    @Override
     public double getSalary() {
         return workingHours * hourlyRate;
     }

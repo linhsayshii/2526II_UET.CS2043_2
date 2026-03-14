@@ -11,6 +11,7 @@ public class Food extends Product {
             return super.getFinalPrice();
         }
     }
+    @Override
     public String getType() {
         return "Food";
     }

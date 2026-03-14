@@ -8,9 +8,11 @@ class FullTimeEmployee extends Employee {
         this.bonus = bonus;
         this.penalty = penalty;
     }
+    @Override
     public String getType() {
         return "Full-time";
     }
+    @Override
     public double getSalary() {
         return baseSalary + bonus - penalty;
     }

@@ -38,7 +38,7 @@ public class Main {
                 employees.add(new PartTimeEmployee(name, hours, rate));
             }
         }
-        
+        System.out.println("----------------------------------------------");
         for (Employee e : employees) {
             System.out.println(e.getName() + " - " + e.getType() + " - " + e.getSalary());
         }
