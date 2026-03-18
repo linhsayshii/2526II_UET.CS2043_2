@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.print("Enter number of employees: ");
         Scanner sc = new Scanner(System.in);
         List<Employee> employees = new ArrayList<>();
-        System.out.print("Enter number of employees: ");
         int n = Integer.parseInt(sc.nextLine());
         for (int i = 0; i < n; i++) {
-            System.out.println("Employee " + (i + 1) + ": ");
+            System.out.print("Employee " + (i + 1) + ": ");
             String line = sc.nextLine().trim();
             String[] parts = line.split("\\s+");
 
