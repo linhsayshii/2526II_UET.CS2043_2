@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ed20a33-199b-4b3c-8316-d6980459bc5f" name="Changes" comment="initial commit for week2 homework">
-      <change beforePath="$PROJECT_DIR$/Homework/HoangVietLinh_25020234_Week3/Bai10/src/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/HoangVietLinh_25020234_Week3/Bai10/src/Tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +66,7 @@
     &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/linhsayshii/CLionProjects/uet/2526II_UET.CS2043_2/Homework/HoangVietLinh_25020234_Week3/Bai05&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/linhsayshii/CLionProjects/uet/2526II_UET.CS2043_2&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -112,6 +113,8 @@
       <workItem from="1773296612903" duration="52000" />
       <workItem from="1773296686566" duration="8022000" />
       <workItem from="1774352973785" duration="319000" />
+      <workItem from="1774506199279" duration="2256000" />
+      <workItem from="1774872614062" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="new unexpected case for week1 homework">
       <option name="closed" value="true" />
