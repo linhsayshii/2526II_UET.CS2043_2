@@ -1,0 +1,80 @@
+name: Java CI
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+    paths:
+      - 'Homework/**/*.java'
+      - '.github/workflows/ci.yml'
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: Compile & Verify
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 21
+      uses: actions/setup-java@v4
+      with:
+        java-version: '21'
+        distribution: 'temurin'
+
+    - name: Compile all Java projects
+      run: |
+        TOTAL=0
+        PASS=0
+        FAIL=0
+        SKIP=0
+        FAILED_PROJECTS=""
+
+        echo "========================================================"
+        echo "  Java Homework CI — Compilation Check"
+        echo "========================================================"
+        echo ""
+
+        # Iterate over each Bai* directory that has a src/ folder
+        while IFS= read -r BAI_DIR; do
+          TOTAL=$((TOTAL + 1))
+
+          # Collect all .java files (flat — no packages)
+          JAVA_FILES=$(find "$BAI_DIR/src" -maxdepth 1 -name "*.java" 2>/dev/null)
+
+          if [ -z "$JAVA_FILES" ]; then
+            echo "⏭  SKIP  $BAI_DIR  (no .java files)"
+            SKIP=$((SKIP + 1))
+            continue
+          fi
+
+          BUILD_DIR="$BAI_DIR/build"
+          mkdir -p "$BUILD_DIR"
+
+          if javac -d "$BUILD_DIR" $JAVA_FILES 2>&1; then
+            echo "✅  PASS  $BAI_DIR"
+            PASS=$((PASS + 1))
+          else
+            echo "❌  FAIL  $BAI_DIR"
+            FAIL=$((FAIL + 1))
+            FAILED_PROJECTS="$FAILED_PROJECTS\n  - $BAI_DIR"
+            # GitHub Actions annotation
+            echo "::error file=$BAI_DIR::Compilation failed for $BAI_DIR"
+          fi
+        done < <(find Homework -type d -name "Bai*" | sort)
+
+        echo ""
+        echo "========================================================"
+        echo "  Results:  $PASS passed  |  $FAIL failed  |  $SKIP skipped  |  $TOTAL total"
+        echo "========================================================"
+
+        if [ $FAIL -ne 0 ]; then
+          echo ""
+          echo "Failed projects:"
+          echo -e "$FAILED_PROJECTS"
+          exit 1
+        fi
+
+        echo ""
+        echo "All projects compiled successfully! 🎉"
