@@ -1,3 +1,4 @@
+package src;
 public class BankAccount {
     private String accountNumber;
     private String ownerName;

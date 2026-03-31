@@ -1,3 +1,4 @@
+package src;
 public class SmartFan {
     private String brand = "Xiaomi";
     private boolean isPowerOn = false;
