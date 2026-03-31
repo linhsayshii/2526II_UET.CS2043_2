@@ -25,6 +25,7 @@ jobs:
 
     - name: Compile all Java projects
       run: |
+        set +e
         TOTAL=0
         PASS=0
         FAIL=0
@@ -40,8 +41,15 @@ jobs:
         while IFS= read -r BAI_DIR; do
           TOTAL=$((TOTAL + 1))
 
+          # Skip if no src/ directory exists
+          if [ ! -d "$BAI_DIR/src" ]; then
+            echo "⏭  SKIP  $BAI_DIR  (no src/ directory)"
+            SKIP=$((SKIP + 1))
+            continue
+          fi
+
           # Collect all .java files (flat — no packages)
-          JAVA_FILES=$(find "$BAI_DIR/src" -maxdepth 1 -name "*.java" 2>/dev/null)
+          JAVA_FILES=$(find "$BAI_DIR/src" -maxdepth 1 -name "*.java" 2>/dev/null || true)
 
           if [ -z "$JAVA_FILES" ]; then
             echo "⏭  SKIP  $BAI_DIR  (no .java files)"
