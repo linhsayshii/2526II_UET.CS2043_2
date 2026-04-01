@@ -27,7 +27,7 @@ public class NormalizeText {
         }
     }
     public String getMostCommonWord() {
-        if (wordCount == null) {
+        if(wordCount == null) {
             processText();
         }
         String mostCommonWord = "";
@@ -41,7 +41,7 @@ public class NormalizeText {
         return mostCommonWord;
     }
     public List<String> getUniqueWords() {
-        if (wordCount == null) {
+        if(wordCount == null) {
             processText();
         }
         List<String> uniqueWords = new ArrayList<>();
@@ -51,11 +51,5 @@ public class NormalizeText {
             }
         }
         return uniqueWords;
-    }
-    public void displayResult() {
-        if (wordCount == null) {
-            processText();
-        }
-        System.out.println(wordCount);
     }
 }
