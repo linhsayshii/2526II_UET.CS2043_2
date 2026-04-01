@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         List<Student> students = new ArrayList<>();
-        String filename = "students.dat";
+        String filename = "../students.dat";
         
         System.out.println("Nhập thông tin sinh viên (ID, Name, GPA cách nhau bởi khoảng trắng)");
         System.out.println("Nhập 'END' để kết thúc nhập liệu");

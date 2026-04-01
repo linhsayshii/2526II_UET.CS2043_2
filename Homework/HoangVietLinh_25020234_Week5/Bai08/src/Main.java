@@ -7,7 +7,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         DataOutputStream dos = null;
         try {
-            dos = new DataOutputStream(new FileOutputStream("./numbers.dat"));
+            dos = new DataOutputStream(new FileOutputStream("../numbers.dat"));
             System.out.print("Nhập các số (cách nhau bởi space): ");
             String line = sc.nextLine();
             String[] numbers = line.split(" ");
@@ -37,7 +37,7 @@ public class Main {
         //Đọc tệp
         DataInputStream dis = null;
         try {
-            dis = new DataInputStream(new FileInputStream("./numbers.dat"));
+            dis = new DataInputStream(new FileInputStream("../numbers.dat"));
             while (true) {
                 try{
                     int number = dis.readInt();
