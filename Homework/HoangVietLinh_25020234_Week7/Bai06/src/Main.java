@@ -12,7 +12,10 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         List<Future<Integer>> future = new ArrayList<>();
 
-        if (!sc.hasNextInt()) return;
+        if (!sc.hasNextInt()) {
+            sc.close();
+            return;
+        }
         int n = sc.nextInt();
 
         int threadCount = Math.min(n, 4); // Giới hạn số thread tối đa là 4
@@ -29,7 +32,7 @@ public class Main {
         }
 
         int totalSum = 0;
-        for (int i = 0; i<n; i++) {
+        for (int i = 0; i < n; i++) {
             try {
                 Integer secondLargest = future.get(i).get();
                 if (secondLargest == null) {
