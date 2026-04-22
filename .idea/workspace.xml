@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ed20a33-199b-4b3c-8316-d6980459bc5f" name="Changes" comment="initial commit for week2 homework" />
+    <list default="true" id="9ed20a33-199b-4b3c-8316-d6980459bc5f" name="Changes" comment="initial commit for week2 homework">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +70,10 @@
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/linhsayshii/UET/Code/2526II_UET.CS2043_2",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -117,7 +123,7 @@
       <workItem from="1774352973785" duration="319000" />
       <workItem from="1774506199279" duration="2256000" />
       <workItem from="1774872614062" duration="31000" />
-      <workItem from="1776867826832" duration="31000" />
+      <workItem from="1776867826832" duration="1439000" />
     </task>
     <task id="LOCAL-00001" summary="new unexpected case for week1 homework">
       <option name="closed" value="true" />
