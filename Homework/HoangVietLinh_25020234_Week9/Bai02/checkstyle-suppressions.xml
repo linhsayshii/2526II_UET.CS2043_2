@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suppressions PUBLIC
+    "-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN"
+    "https://checkstyle.org/dtds/suppressions_1_2.dtd">
+<suppressions>
+    <!-- Bỏ qua kiểm tra Javadoc cho các file trong package com.bank -->
+    <suppress checks="JavadocMethod" files=".*\.java"/>
+    <suppress checks="JavadocType" files=".*\.java"/>
+    <suppress checks="JavadocVariable" files=".*\.java"/>
+    <suppress checks="MissingJavadocMethod" files=".*\.java"/>
+    <suppress checks="MissingJavadocType" files=".*\.java"/>
+    <suppress checks="SummaryJavadoc" files=".*\.java"/>
+</suppressions>
