@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+    Bài 9: FXML với nút Save và Load (thay thế Submit).
+-->
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.app.StudentController"
+      spacing="15"
+      styleClass="main-container">
+
+    <padding>
+        <Insets top="20" right="30" bottom="20" left="30"/>
+    </padding>
+
+    <Label text="ĐĂNG KÝ SINH VIÊN" styleClass="title-label"/>
+    <Separator/>
+
+    <GridPane hgap="15" vgap="12" styleClass="form-grid">
+        <Label text="Họ và tên:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="txtFullName" promptText="Nguyễn Văn A"
+                   GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="MSSV:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="txtStudentId" promptText="25020234"
+                   GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="txtEmail" promptText="email@vnu.edu.vn"
+                   GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Label text="Ngày sinh:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <DatePicker fx:id="dateBirth" promptText="Chọn ngày"
+                    GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+        <Label text="Khoa:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <ComboBox fx:id="cboFaculty" promptText="-- Chọn khoa --"
+                  GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+        <Label text="Giới tính:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <HBox spacing="15" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <RadioButton fx:id="radioMale" text="Nam"/>
+            <RadioButton fx:id="radioFemale" text="Nữ"/>
+        </HBox>
+
+        <CheckBox fx:id="chkAgree" text="Tôi đồng ý với các điều khoản"
+                  GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+        <columnConstraints>
+            <ColumnConstraints minWidth="100" prefWidth="120"/>
+            <ColumnConstraints minWidth="200" prefWidth="350" hgrow="ALWAYS"/>
+        </columnConstraints>
+    </GridPane>
+
+    <Label fx:id="lblStatus" text="" styleClass="status-label"/>
+
+    <!-- Nút Save, Load, Clear -->
+    <HBox spacing="15" alignment="CENTER_RIGHT" styleClass="button-bar">
+        <Button fx:id="btnSave" text="💾 Save" styleClass="btn-primary"/>
+        <Button fx:id="btnLoad" text="📂 Load" styleClass="btn-load"/>
+        <Button fx:id="btnClear" text="Clear" styleClass="btn-secondary"/>
+    </HBox>
+
+</VBox>

@@ -1,0 +1,110 @@
+/* ============================================================
+   Bài 7: CSS Styling cho biểu mẫu đăng ký sinh viên
+   ============================================================ */
+
+/* Container chính */
+.main-container {
+    -fx-background-color: #f5f7fa;
+}
+
+/* Tiêu đề */
+.title-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 5 0 5 0;
+}
+
+/* Form grid */
+.form-grid .label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #34495e;
+    -fx-font-weight: bold;
+}
+
+/* TextField, ComboBox, DatePicker */
+.text-field, .combo-box, .date-picker {
+    -fx-font-size: 13px;
+    -fx-padding: 8;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 1;
+}
+
+.text-field:focused, .combo-box:focused, .date-picker:focused {
+    -fx-border-color: #3498db;
+    -fx-border-width: 2;
+}
+
+/* Radio buttons */
+.radio-button {
+    -fx-font-size: 13px;
+    -fx-text-fill: #2c3e50;
+}
+
+/* Checkbox */
+.check-box {
+    -fx-font-size: 13px;
+    -fx-text-fill: #2c3e50;
+}
+
+/* Nút chính (Submit) */
+.btn-primary {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 30;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #2980b9;
+}
+
+.btn-primary:pressed {
+    -fx-background-color: #21618c;
+}
+
+/* Nút phụ (Clear) */
+.btn-secondary {
+    -fx-background-color: #95a5a6;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10 30;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #7f8c8d;
+}
+
+/* Separator */
+.separator .line {
+    -fx-border-color: #bdc3c7;
+}
+
+/* Status label */
+.status-label {
+    -fx-font-size: 13px;
+    -fx-padding: 5 0;
+}
+
+/* Error styling (dùng ở bài sau) */
+.error-field {
+    -fx-border-color: #e74c3c;
+    -fx-border-width: 2;
+}
+
+.success-text {
+    -fx-text-fill: #27ae60;
+    -fx-font-weight: bold;
+}
+
+.error-text {
+    -fx-text-fill: #e74c3c;
+    -fx-font-weight: bold;
+}

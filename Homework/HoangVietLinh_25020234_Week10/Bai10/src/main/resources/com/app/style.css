@@ -1,0 +1,129 @@
+/* ============================================================
+   Bài 10: CSS Styling - Advanced với ProgressIndicator
+   ============================================================ */
+
+.main-container {
+    -fx-background-color: #f5f7fa;
+}
+
+.title-label {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+    -fx-padding: 5 0 0 0;
+}
+
+.hint-label {
+    -fx-font-size: 11px;
+    -fx-text-fill: #7f8c8d;
+    -fx-font-style: italic;
+    -fx-padding: 0 0 5 0;
+}
+
+.form-grid .label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #34495e;
+    -fx-font-weight: bold;
+}
+
+.text-field, .combo-box, .date-picker {
+    -fx-font-size: 13px;
+    -fx-padding: 8;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: #bdc3c7;
+    -fx-border-width: 1;
+    -fx-transition: border-color 0.3s;
+}
+
+.text-field:focused, .combo-box:focused, .date-picker:focused {
+    -fx-border-color: #3498db;
+    -fx-border-width: 2;
+}
+
+/* Real-time validation: viền đỏ khi nhập sai */
+.error-field {
+    -fx-border-color: #e74c3c !important;
+    -fx-border-width: 2 !important;
+    -fx-background-color: #fdf2f2;
+}
+
+.radio-button, .check-box {
+    -fx-font-size: 13px;
+    -fx-text-fill: #2c3e50;
+}
+
+.btn-primary {
+    -fx-background-color: #27ae60;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #219a52;
+}
+
+.btn-primary:disabled {
+    -fx-background-color: #a9dfbf;
+    -fx-cursor: default;
+}
+
+.btn-load {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.btn-load:hover {
+    -fx-background-color: #2980b9;
+}
+
+.btn-load:disabled {
+    -fx-background-color: #aed6f1;
+    -fx-cursor: default;
+}
+
+.btn-secondary {
+    -fx-background-color: #95a5a6;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-padding: 10 20;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #7f8c8d;
+}
+
+.separator .line {
+    -fx-border-color: #bdc3c7;
+}
+
+.status-label {
+    -fx-font-size: 13px;
+    -fx-padding: 5 0;
+}
+
+.success-text {
+    -fx-text-fill: #27ae60;
+    -fx-font-weight: bold;
+}
+
+.error-text {
+    -fx-text-fill: #e74c3c;
+    -fx-font-weight: bold;
+}
+
+/* ProgressIndicator styling */
+.progress-indicator {
+    -fx-progress-color: #3498db;
+}

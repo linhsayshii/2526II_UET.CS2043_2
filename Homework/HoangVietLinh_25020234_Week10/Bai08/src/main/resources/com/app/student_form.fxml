@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+    Bài 8: FXML với Controller.
+    fx:controller liên kết View này với StudentController.
+    View chỉ là bố cục khai báo - KHÔNG chứa logic.
+-->
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.app.StudentController"
+      spacing="15"
+      styleClass="main-container">
+
+    <padding>
+        <Insets top="20" right="30" bottom="20" left="30"/>
+    </padding>
+
+    <!-- Tiêu đề -->
+    <Label text="ĐĂNG KÝ SINH VIÊN" styleClass="title-label"/>
+    <Separator/>
+
+    <!-- Form nhập liệu -->
+    <GridPane hgap="15" vgap="12" styleClass="form-grid">
+        <Label text="Họ và tên:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="txtFullName" promptText="Nguyễn Văn A"
+                   GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="MSSV:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="txtStudentId" promptText="25020234"
+                   GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Email:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="txtEmail" promptText="email@vnu.edu.vn"
+                   GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Label text="Ngày sinh:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <DatePicker fx:id="dateBirth" promptText="Chọn ngày"
+                    GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+        <Label text="Khoa:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <ComboBox fx:id="cboFaculty" promptText="-- Chọn khoa --"
+                  GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+        <Label text="Giới tính:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <HBox spacing="15" GridPane.columnIndex="1" GridPane.rowIndex="5">
+            <RadioButton fx:id="radioMale" text="Nam"/>
+            <RadioButton fx:id="radioFemale" text="Nữ"/>
+        </HBox>
+
+        <CheckBox fx:id="chkAgree" text="Tôi đồng ý với các điều khoản"
+                  GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+        <columnConstraints>
+            <ColumnConstraints minWidth="100" prefWidth="120"/>
+            <ColumnConstraints minWidth="200" prefWidth="350" hgrow="ALWAYS"/>
+        </columnConstraints>
+    </GridPane>
+
+    <!-- Thông báo trạng thái -->
+    <Label fx:id="lblStatus" text="" styleClass="status-label"/>
+
+    <!-- Nút bấm -->
+    <HBox spacing="15" alignment="CENTER_RIGHT" styleClass="button-bar">
+        <Button fx:id="btnSubmit" text="Submit" styleClass="btn-primary"/>
+        <Button fx:id="btnClear" text="Clear" styleClass="btn-secondary"/>
+    </HBox>
+
+</VBox>
